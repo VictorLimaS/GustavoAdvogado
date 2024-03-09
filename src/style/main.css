@@ -13,7 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 70%;
+    align-items: center;
+    width: 100%;
     color: rgb(255, 255, 255);
     gap: 50px;
 }
@@ -23,6 +24,10 @@ body {
     font-family: "Ephesis", cursive;
     font-weight: bold;
     font-style: normal;
+}
+
+.inicio .content_inicio .texto_inicio {
+    width: 70%;
 }
 
 .inicio .content_inicio .texto_inicio p {
@@ -67,7 +72,7 @@ body {
 .inicio .gustavo_foto {
     position: absolute;
     top: 4.5rem;
-    width: 500px;
+    width: 38rem;
     right: 0;
     z-index: -1;
 }

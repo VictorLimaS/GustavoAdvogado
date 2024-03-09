@@ -1,0 +1,9 @@
+.container_map {
+    display: flex;
+    justify-content: center;
+}
+
+.container_map iframe {
+    width: 100%;
+    height: 300px;
+}

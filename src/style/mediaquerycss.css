@@ -1,0 +1,192 @@
+@media (max-width: 1410px) {
+    .inicio .content_inicio .nome_inicio h1 {
+        font-size: 8rem;
+    }
+
+    .inicio .content_inicio .texto_inicio p {
+        font-size: 1rem;
+    }
+
+    .inicio .gustavo_foto {
+        position: absolute;
+        top: 4.5rem;
+        width: 37rem;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1110px) {
+
+
+    .inicio .gustavo_foto {
+        position: absolute;
+        top: 4.5rem;
+        width: 37rem;
+        right: 0;
+        z-index: -1;
+    }
+
+    .sobre .content_sobre .caixa_sobre p {
+        font-size: 28px;
+    }
+
+    .sobre .caixa_cards h3 {
+        font-size: 30px;
+    }
+
+    .sobre .caixa_cards .cards .card {
+        height: 250px;
+    }
+
+    .sobre .caixa_cards .cards .card h4 {
+        font-size: 15px;
+    }
+
+    .trabalhos .content_trabalhos .caixa_cards .card {
+        width: calc(30% - 20px);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .contato .content_contato {
+        gap: 0;
+    }
+
+    .direitos {
+        gap: 8px;
+        padding: 5px 10px;
+    }
+
+    .content_footer .social {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .contato .content_contato {
+        gap: 0;
+    }
+
+    .sobre .caixa_cards .cards .card p {
+        font-size: 10px;
+    }
+
+
+    .trabalhos {
+        height: 150vh;
+    }
+
+    .trabalhos .content_trabalhos {
+        margin-top: 0px;
+    }
+
+    .trabalhos .content_trabalhos .caixa_cards .card {
+        width: calc(40% - 20px);
+    }
+
+    .content_footer .social {
+        font-size: 20px;
+    }
+
+    .direitos {
+        gap: 8px;
+        padding: 5px 10px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    header nav ul {
+        display: none;
+    }
+
+    header nav .hamburguer {
+        display: flex;
+    }
+    
+    .icone_whats {
+        display: none;
+    }
+
+    .sobre .content_sobre .caixa_sobre p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 830px) {
+    .inicio .content_inicio .nome_inicio h1 {
+        font-size: 7rem;
+    }
+
+    .sobre .content_sobre .caixa_sobre p {
+        font-size: 22px;
+    }
+
+    .content_footer {
+        height: 100px;
+    }
+
+    .contato .content_contato {
+        justify-content: center;
+    }
+
+    .contato .content_contato .caixa_contato {
+        width: 100%;
+    }
+
+    .contato .content_contato .fundo_gusttavo {
+        display: none;
+    }
+
+    .sobre .content_sobre .caixa_sobre h3 {
+        font-size: 50px;
+    }
+
+    .trabalhos .content_trabalhos .caixa_cards .card {
+        font-size: 12px;
+    }
+
+    .content_footer .caixa h3 {
+        font-size: 20px;
+    }
+
+    .content_footer .caixa p {
+        font-size: 10px;
+    }
+
+    .direitos p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 730px) {
+    .inicio .content_inicio .nome_inicio h1 {
+        font-size: 6rem;
+    }
+
+    .inicio .gustavo_foto {
+        display: none;
+    }
+
+    .content_footer .social {
+        font-size: 10px;
+    }
+
+    .content_footer .caixa h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 730px) {
+    .content_footer .caixa h3 {
+        font-size: 10px;
+    }
+
+    .content_footer .logo_footer img {
+        width: 6rem;
+    }
+}
