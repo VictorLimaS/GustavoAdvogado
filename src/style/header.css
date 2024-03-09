@@ -63,6 +63,7 @@ header nav ul li a:hover {
     margin-left: 20px;
     font-size: 40px;
     position: fixed;
+    cursor: pointer;
     z-index: 1;
 }
 
