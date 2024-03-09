@@ -1,0 +1,87 @@
+.trabalhos {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabalhos .content_trabalhos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.quadrado {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-image: url('src/img/fundomain.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 20%;
+}
+
+.trabalhos .content_trabalhos h2 {
+    font-size: 50px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.trabalhos .content_trabalhos .caixa_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trabalhos .content_trabalhos .caixa_cards .card {
+    width: calc(25% - 15px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trabalhos .content_trabalhos .caixa_cards .card h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.trabalhos .content_trabalhos .caixa_cards .card ion-icon {
+    display: flex;
+    font-size: 24px;
+}
+
+.trabalhos .content_trabalhos .caixa_cards .card button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    background: hsl(43, 87%, 54%);
+    color: rgb(255, 255, 255);
+    border: 1px solid hsl(43, 87%, 54%);
+    cursor: pointer;
+}
+
+.trabalhos .content_trabalhos .caixa_cards .card button:hover {
+    background: transparent;
+    color: hsl(43, 87%, 54%);
+}
+
+.trabalhos .content_trabalhos .caixa_cards .card button ion-icon {
+    font-size: 10px;
+}
+
+.trabalhos .content_trabalhos .caixa_cards .card button ion-icon:hover {
+    transform: scale(1.04);
+}

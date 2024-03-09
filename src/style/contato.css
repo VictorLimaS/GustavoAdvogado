@@ -1,0 +1,62 @@
+.contato {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.contato .content_contato {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.contato .content_contato .fundo_gusttavo {
+    width: 300px;
+}
+
+.contato .content_contato .caixa_contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 10px;
+}
+
+.contato .content_contato .caixa_contato input {
+    border-radius: 20px;
+    border: 1px solid white ;
+    color: white;
+    background: transparent;
+    height: 50px;
+    padding: 20px;
+    width: 100%;
+}
+
+.contato .content_contato .caixa_contato textarea {
+    border-radius: 20px;
+    border: 1px solid white ;
+    color: white;
+    background: transparent;
+    padding: 20px;
+    width: 100%;
+    resize: none;
+}
+
+.contato .content_contato .caixa_contato button {
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    color: hsl(43, 87%, 54%);
+    background: transparent;
+    border: 1px solid hsl(43, 87%, 54%);
+    font-size: 17px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.contato .content_contato .caixa_contato button:hover {
+    background: hsl(43, 87%, 54%);
+    color: hsl(0, 0%, 100%);
+}
