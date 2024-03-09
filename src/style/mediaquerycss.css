@@ -17,8 +17,6 @@
 }
 
 @media (max-width: 1110px) {
-
-
     .inicio .gustavo_foto {
         position: absolute;
         top: 4.5rem;
@@ -49,7 +47,6 @@
 }
 
 @media (max-width: 1000px) {
-
     .contato .content_contato {
         gap: 0;
     }
@@ -62,11 +59,9 @@
     .content_footer .social {
         font-size: 20px;
     }
-
 }
 
 @media (max-width: 950px) {
-
     .contato .content_contato {
         gap: 0;
     }
@@ -74,7 +69,6 @@
     .sobre .caixa_cards .cards .card p {
         font-size: 10px;
     }
-
 
     .trabalhos {
         height: 150vh;
@@ -96,7 +90,6 @@
         gap: 8px;
         padding: 5px 10px;
     }
-
 }
 
 @media (max-width: 900px) {
@@ -107,7 +100,7 @@
     header nav .hamburguer {
         display: flex;
     }
-    
+
     .icone_whats {
         display: none;
     }
@@ -198,9 +191,7 @@
     .content_footer .caixa h3 {
         font-size: 15px;
     }
-}
 
-@media (max-width: 730px) {
     .content_footer .caixa h3 {
         font-size: 10px;
     }
@@ -243,8 +234,26 @@
         font-size: 10px;
     }
 
+    .sobre .content_sobre .caixa_sobre {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .sobre .caixa_cards {
+        width: 80%;
+    }
+
+    .trabalhos .content_trabalhos h2 {
+        font-size: 25px;
+    }
+
     .trabalhos .content_trabalhos .caixa_cards .card {
         width: calc(80% - 20px);
+    }
+
+    .content_footer {
+        gap: 0px;
+        padding: 5px 2px;
     }
 
     .content_footer .caixa h3 {
@@ -256,6 +265,10 @@
     }
 
     .content_footer .social {
-        font-size: 10px;
+        font-size: 5px;
+    }
+
+    .container_obs div {
+        font-size: 12px;
     }
 }
