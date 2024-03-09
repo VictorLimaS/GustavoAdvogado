@@ -146,8 +146,27 @@
         font-size: 50px;
     }
 
+    .sobre .content_sobre {
+        flex-direction: column;
+    }
+
     .trabalhos .content_trabalhos .caixa_cards .card {
         font-size: 12px;
+    }
+
+    .sobre .caixa_cards .cards {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sobre .caixa_cards .cards .card button {
+        padding: 0.5rem 0.9rem;
+        border-radius: 6px;
+        background: transparent;
+        color: hsl(43, 87%, 54%);
+        border: 1px solid hsl(43, 87%, 54%);
+        font-size: 8px;
+        cursor: pointer;
     }
 
     .content_footer .caixa h3 {
@@ -188,5 +207,55 @@
 
     .content_footer .logo_footer img {
         width: 6rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .trabalhos {
+        height: 180vh;
+    }
+
+    .inicio .content_inicio .nome_inicio h1 {
+        font-size: 3rem;
+    }
+
+    .inicio .content_inicio .texto_inicio p {
+        font-size: 0.8rem;
+    }
+
+    .container_obs div {
+        font-size: 15px;
+    }
+
+    .sobre .content_sobre .caixa_sobre h3 {
+        font-size: 20px;
+    }
+
+    .sobre .content_sobre .caixa_sobre p {
+        font-size: 12px;
+    }
+
+    .sobre .caixa_cards h3 {
+        font-size: 15px;
+    }
+
+    .sobre .caixa_cards .cards .card p {
+        font-size: 10px;
+    }
+
+    .trabalhos .content_trabalhos .caixa_cards .card {
+        width: calc(80% - 20px);
+    }
+
+    .content_footer .caixa h3 {
+        font-size: 12px;
+    }
+
+    .content_footer .caixa p {
+        font-size: 5px;
+    }
+
+    .content_footer .social {
+        font-size: 10px;
     }
 }
