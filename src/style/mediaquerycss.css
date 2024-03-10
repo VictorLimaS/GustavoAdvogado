@@ -112,7 +112,7 @@
 
 @media (max-width: 830px) {
     .sobre {
-        height: 150vh;
+        height: 180vh;
     }
 
 
@@ -183,8 +183,12 @@
         padding-top: 80%;
     }
 
-    .container_obs, .container_map {
-        padding: 20% 0; 
+    .container_obs {
+        padding-bottom: 0 0 0 50%; 
+    }
+
+    .container_map {
+        padding:  50% 0;
     }
 }
 
