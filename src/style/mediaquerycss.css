@@ -9,7 +9,7 @@
 
     .inicio .gustavo_foto {
         position: absolute;
-        top: 4.5rem;
+        top: 0rem;
         width: 37rem;
         right: 0;
         z-index: -1;
@@ -19,7 +19,7 @@
 @media (max-width: 1110px) {
     .inicio .gustavo_foto {
         position: absolute;
-        top: 4.5rem;
+        top: rem;
         width: 37rem;
         right: 0;
         z-index: -1;
@@ -111,8 +111,13 @@
 }
 
 @media (max-width: 830px) {
+    .sobre {
+        height: 160vh;
+    }
+    
+
     .inicio .content_inicio .nome_inicio h1 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     .sobre .content_sobre .caixa_sobre p {
@@ -157,7 +162,7 @@
         border-radius: 6px;
         background: transparent;
         color: hsl(43, 87%, 54%);
-        border: 1px solid hsl(43, 87%, 54%);
+        border: 1px solid       ;
         font-size: 8px;
         cursor: pointer;
     }
@@ -176,8 +181,13 @@
 }
 
 @media (max-width: 730px) {
+
+    .sobre {
+        height: 160vh;
+    }
+    
     .inicio .content_inicio .nome_inicio h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     .inicio .gustavo_foto {
