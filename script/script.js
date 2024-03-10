@@ -20,50 +20,63 @@ linkBotaoTrabalhos.forEach(botao => {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("header nav ul li a");
-  
+
     links.forEach(link => {
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-  
-        const targetId = this.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-  
-        if (targetElement) {
-          const offsetTop = targetElement.offsetTop;
-          window.scrollTo({
-            top: offsetTop,
-            behavior: "smooth" 
-          });
-        }
-      });
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
     });
-  });
+});
 
 
 
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("header nav ul li a");
-  
+
     function highlightNavItem() {
-      sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
-  
-        if (isInViewport) {
-          const sectionId = section.getAttribute("id");
-          navLinks.forEach(link => {
-            if (link.getAttribute("href") === `#${sectionId}`) {
-              link.classList.add("active");
-            } else {
-              link.classList.remove("active");
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+            if (isInViewport) {
+                const sectionId = section.getAttribute("id");
+                navLinks.forEach(link => {
+                    if (link.getAttribute("href") === `#${sectionId}`) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
             }
-          });
-        }
-      });
+        });
     }
-  
+
     window.addEventListener("scroll", highlightNavItem);
-  });
+});
+
+
+
+const hamburguer = document.querySelector('.hamburguer');
+const menuHamburguer = document.querySelector('.menu-hamburguer');
+
+hamburguer.addEventListener('click', () => {
+    menuHamburguer.style.display = 'block';
+});
+
+menuHamburguer.addEventListener('click', () => {
+    menuHamburguer.style.display = 'none';
+});
