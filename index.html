@@ -39,7 +39,7 @@
     <main>
 
         <div class="icone_whats">
-            <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a target="_blank" href="https://w.app/fJa95b"><ion-icon name="logo-whatsapp"></ion-icon></a>
         </div>
 
         <section class="container inicio" id="inicio">
@@ -104,7 +104,7 @@
                                     este
                                     período a empresa contrata o trabalhador de forma definitiva...</p>
                             </div>
-                            <button class="botao_continuar">Continuar lendo ➔</button>
+                            <button class="botao_continuar" id="botao_fgts">Continuar lendo ➔</button>
                         </div>
                         <div class="card">
                             <div class="content_card">
@@ -112,7 +112,7 @@
                                 <p>É muito comum e, de forma infeliz, que muitas empresas, principalmente no
                                     mês de janeiro, atrasem o pagamento do salário...</p>
                             </div>
-                            <button class="botao_continuar">Continuar lendo ➔</button>
+                            <button class="botao_continuar" id="botao_salario">Continuar lendo ➔</button>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                         <h3>Direito dos Trabalhadores</h3>
                         <p>Direitos trabalhistas são leis e regras que regem a relação entre empregados e empregadores.
                         </p>
-                        <button>Orçamento <ion-icon name="send-outline"></ion-icon></button>
+                        <button id="botao_trabalhos">Orçamento <ion-icon name="send-outline"></ion-icon></button>
                     </div>
 
                     <div class="card card1">
@@ -140,7 +140,7 @@
                             integridade física ou psíquica de pessoa, pôr em perigo o seu emprego ou degradar o ambiente
                             de
                             trabalho.</p>
-                        <button>Orçamento <ion-icon name="send-outline"></ion-icon></button>
+                        <button id="botao_trabalhos">Orçamento <ion-icon name="send-outline"></ion-icon></button>
                     </div>
 
                     <div class="card card2">
@@ -153,7 +153,7 @@
                             do Trabalho, são várias as situações em que a Lei atribui ao empregador o direito de demitir
                             o
                             empregado por justa causa.</p>
-                        <button>Orçamento <ion-icon name="send-outline"></ion-icon></button>
+                        <button id="botao_trabalhos">Orçamento <ion-icon name="send-outline"></ion-icon></button>
                     </div>
 
                     <div class="card card3">
@@ -164,7 +164,7 @@
                             medidas, que só valerão para essa empresa e seus colaboradores. Na maioria das vezes, esse
                             acordo serve para resolver alguma situação conflitante e, para isso, é realizado uma
                             negociação.</p>
-                        <button>Orçamento <ion-icon name="send-outline"></ion-icon></button>
+                        <button id="botao_trabalhos">Orçamento <ion-icon name="send-outline"></ion-icon></button>
                     </div>
 
                     <div class="card card4">
@@ -174,7 +174,7 @@
                             direitos em juízo. Ocorre quando há divergência entre as partes da ação, quando alguma
                             demanda é colocada em juízo. Depois de aberta a ação judicialmente, o autor entra com o
                             pedido e o réu deve fazer sua contestação</p>
-                        <button>Orçamento <ion-icon name="send-outline"></ion-icon></button>
+                        <button id="botao_trabalhos">Orçamento <ion-icon name="send-outline"></ion-icon></button>
                     </div>
 
                     <div class="card card5">
@@ -183,16 +183,17 @@
                         <p>A conformidade legal, também conhecida como compliance, é adequar os procedimentos da sua
                             empresa à legislação, realizando o monitoramento, avaliação e melhoria dos processos
                             internos.</p>
-                        <button>Orçamento <ion-icon name="send-outline"></ion-icon></button>
+                        <button id="botao_trabalhos">Orçamento <ion-icon name="send-outline"></ion-icon></button>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="container_map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.1233848435536!2d-46.2852126!3d-23.9560767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce017e2d4fcd6b%3A0x7b54eb50fbb287a7!2sR.%20Jord%C3%A3o%20Ot%C3%A1vio%20de%20Azevedo%2C%20257%20-%20Jardim%20Monteiro%20da%20Cruz%20(Vicente%20de%20Carvalho)%2C%20Guaruj%C3%A1%20-%20SP%2C%2011462-400!5e0!3m2!1spt-BR!2sbr!4v1709504389578!5m2!1spt-BR!2sbr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.1233848435536!2d-46.2852126!3d-23.9560767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce017e2d4fcd6b%3A0x7b54eb50fbb287a7!2sR.%20Jord%C3%A3o%20Ot%C3%A1vio%20de%20Azevedo%2C%20257%20-%20Jardim%20Monteiro%20da%20Cruz%20(Vicente%20de%20Carvalho)%2C%20Guaruj%C3%A1%20-%20SP%2C%2011462-400!5e0!3m2!1spt-BR!2sbr!4v1709504389578!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
 
         <section class="container contato" id="contato">
@@ -201,13 +202,16 @@
             </div>
             <div class="content_contato">
                 <img src="src/img/guga.png" alt="foto Gusttavo" class="fundo_gusttavo">
-                <div class="caixa_contato">
-                    <input type="text" placeholder="Nome">
-                    <input type="number" placeholder="Número">
-                    <input type="email" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mande uma mensagem"></textarea>
-                    <button>Enviar</button>
-                </div>
+                <form action="https://api.staticforms.xyz/submit" method="post" class="caixa_contato">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="number" placeholder="Número" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea name="message" cols="30" rows="10" placeholder="Mande uma mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="e101fc56-b87b-4461-9266-6dc56143dc51">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+                </form>
             </div>
 
             <footer>
@@ -242,7 +246,7 @@
         </section>
     </main>
 
-
+    <script src="script/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
 </body>
