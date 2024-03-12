@@ -49,12 +49,7 @@ header nav ul li a {
     color: white;
 }
 
-header nav ul li a:hover {
-    border-bottom: 2px solid hsl(43, 87%, 54%);
-    color: hsl(43, 87%, 54%);
-    transition: 0.5s;
-}
-
+header nav ul li a:hover,
 header nav ul li a.active {
     color: hsl(43, 87%, 54%);
     border-bottom: 2px solid hsl(43, 87%, 54%);

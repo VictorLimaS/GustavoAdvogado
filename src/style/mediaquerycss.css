@@ -26,7 +26,11 @@
     }
 
     .sobre .content_sobre .caixa_sobre p {
-        font-size: 28px;
+        font-size: 25px;
+    }
+
+    .sobre .caixa_cards .cards .card p {
+        font-size: 12px;
     }
 
     .sobre .caixa_cards h3 {
@@ -61,44 +65,21 @@
     }
 }
 
-@media (max-width: 950px) {
-    .contato .content_contato {
-        gap: 0;
-    }
-
-    .sobre .caixa_cards .cards .card p {
-        font-size: 10px;
-    }
-
-    .trabalhos {
-        height: 150vh;
-    }
-
-    .trabalhos .content_trabalhos {
-        margin-top: 0px;
-    }
-
-    .trabalhos .content_trabalhos .caixa_cards .card {
-        width: calc(40% - 20px);
-    }
-
-    .content_footer .social {
-        font-size: 20px;
-    }
-
-    .direitos {
-        gap: 8px;
-        padding: 5px 10px;
-    }
-}
-
 @media (max-width: 900px) {
     header nav ul {
         display: none;
     }
 
+    .inicio .gustavo_foto {
+        display: none;
+    }
+    
     header nav .hamburguer {
         display: flex;
+    }
+
+    .sobre .content_sobre {
+        padding-top: 20%;
     }
 
     .icone_whats {
@@ -112,7 +93,7 @@
 
 @media (max-width: 830px) {
     .sobre {
-        height: 195vh;
+        height: 120vh;
     }
 
 
@@ -186,10 +167,6 @@
     .container_obs {
         padding-bottom: 0 0 0 50%; 
     }
-
-    .container_map {
-        padding: 100% 0 30% 0:
-    }
 }
 
 
@@ -201,10 +178,6 @@
 
     .inicio .content_inicio .nome_inicio h1 {
         font-size: 5rem;
-    }
-
-    .inicio .gustavo_foto {
-        display: none;
     }
 
     .content_footer .social {
@@ -283,8 +256,8 @@
         font-size: 12px;
     }
 
-    .content_footer .caixa p {
-        font-size: 5px;
+    .content_footer .logo_footer img {
+        display: none;
     }
 
     .content_footer .social {

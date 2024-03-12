@@ -1,25 +1,16 @@
-.sobre {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
 .sobre .content_sobre {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 70%;
+    gap: 20px;
+    padding: 8%;
 }
 
 .sobre .content_sobre .caixa_sobre {
     display: flex;
     text-align: center;
     flex-direction: column;
-    width: 80%;
-    height: 100%;
-    padding: 30px;
-    margin: 20px;
-    gap: 30px;
+    width: 100%;
+    padding: 50px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
 
@@ -46,7 +37,6 @@
     justify-content: center;
     height: 100%;
     width: 40%;
-    margin: 20px;
     gap: 40px;
 }
 
@@ -60,18 +50,16 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 80%;
+    height: 20%;
     gap: 10px;
 }
 
 
-.sobre .caixa_cards .cards .card {
+.sobre .caixa_cards .cards .card  {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    width: 100%;
-    height: 280px;
     border-radius: 10px;
 }
 
@@ -99,11 +87,4 @@
     color: hsl(0, 0%, 100%);
 
     
-}
-
-.sobre .caixa_cards .cards .card .content_card {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    gap: 5px;
 }

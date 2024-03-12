@@ -1,16 +1,9 @@
-.trabalhos {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 .trabalhos .content_trabalhos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    padding-top: 7%;
+    margin-bottom: 10%;
     gap: 20px;
 }
 
@@ -25,9 +18,9 @@
 }
 
 .trabalhos .content_trabalhos h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
     color: rgb(255, 255, 255);
 }
 
@@ -38,7 +31,7 @@
 }
 
 .trabalhos .content_trabalhos .caixa_cards .card {
-    width: calc(25% - 15px);
+    width: calc(30% );
     margin: 10px;
     padding: 15px;
     background-color: #ffffff;
