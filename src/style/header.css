@@ -32,10 +32,19 @@ header nav {
     align-items: center;
 }
 
-header nav .hamburguer {
+header nav .open {
     display: none;
     font-size: 60px;
     color: white;
+}
+
+.menu-hamburguer .closer {
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    font-size: 60px;
+    color: white;
+
 }
 
 header nav ul {
@@ -49,8 +58,14 @@ header nav ul li a {
     color: white;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active {
+ul li a:hover,
+ul li a.active {
+    color: hsl(43, 87%, 54%);
+    border-bottom: 2px solid hsl(43, 87%, 54%);
+}
+
+.active,
+nav a:hover {
     color: hsl(43, 87%, 54%);
     border-bottom: 2px solid hsl(43, 87%, 54%);
 }
@@ -95,7 +110,6 @@ header nav ul li a.active {
 .menu-hamburguer ul li a:hover {
     color: #ddd;
 }
-
 
 
 /* ICONE WHATSAPP */

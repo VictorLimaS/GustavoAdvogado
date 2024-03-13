@@ -47,47 +47,55 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // LI FICAREM SELECIONADA COM O HOVER
-
-function setActiveMenuItem() {
+window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
-
+    let currentSectionId = '';
+    
     sections.forEach(section => {
-        const sectionId = section.getAttribute('id');
-
-        const menuItem = document.querySelector(`nav a[href="#${sectionId}"]`);
-
-        const sectionIsInView = section.getBoundingClientRect().top <= 50 && section.getBoundingClientRect().bottom >= 50;
-
-        document.querySelectorAll('nav a').forEach(item => {
-            item.classList.remove('active');
-        });
-
-        if (sectionIsInView) {
-            menuItem.classList.add('active');
+        const sectionTop = section.offsetTop - 50;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSectionId = section.getAttribute('id');
         }
     });
-}
 
-window.addEventListener('load', setActiveMenuItem);
-window.addEventListener('scroll', setActiveMenuItem);
+    const menuItems = document.querySelectorAll('nav a');
+    menuItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${currentSectionId}`) {
+            item.classList.add('active');
+        }
+    });
+});
 
 // MENU hamburguer
-
-const hamburguer = document.querySelector('.hamburguer');
+const openIcon = document.querySelector('.open.hamburguer');
+const closerIcon = document.querySelector('.closer.hamburguer');
 const menuHamburguer = document.querySelector('.menu-hamburguer');
 const menuItems = document.querySelectorAll('.menu-hamburguer li a');
 
-
-hamburguer.addEventListener('click', () => {
+openIcon.addEventListener('click', () => {
     menuHamburguer.style.display = 'block';
+    openIcon.style.display = 'none';
+    closerIcon.style.display = 'block';
 });
 
-menuHamburguer.addEventListener('click', (event) => {
-    if (event.target.tagName === 'A') {
-        menuItems.forEach(item => {
-            item.classList.remove('active');
-        });
-        event.target.classList.add('active');
-        menuHamburguer.style.display = 'none';
-    }
+closerIcon.addEventListener('click', () => {
+    menuHamburguer.style.display = 'none';
+    closerIcon.style.display = 'none';
+    openIcon.style.display = 'block';
+});
+
+menuItems.forEach(item => {
+    item.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        const targetId = item.getAttribute('href').substring(1); 
+        const targetSection = document.getElementById(targetId); 
+        if (targetSection) {
+            menuHamburguer.style.display = 'none';
+            closerIcon.style.display = 'none';
+            openIcon.style.display = 'block';
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
