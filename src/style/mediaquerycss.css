@@ -471,6 +471,14 @@
         display: none;
     }
 
+    .inicio .content_inicio .nome_inicio h1 {
+        font-size: 3rem;
+    }
+
+    .inicio .quadrado {
+        height: 120%;
+    }
+
     /* SOBRE */
     .sobre .content_sobre .caixa_sobre {
         width: 100%;
