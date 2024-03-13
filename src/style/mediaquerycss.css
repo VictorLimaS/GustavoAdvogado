@@ -397,7 +397,7 @@
 
 @media (max-width: 770px) {
 
-    /* INICIO */ 
+    /* INICIO */
     .icone_whats {
         display: none;
     }
@@ -523,7 +523,7 @@
     }
 
     .contato {
-margin-top: 50%;
+        margin-top: 50%;
     }
 
     /* FOOTER */

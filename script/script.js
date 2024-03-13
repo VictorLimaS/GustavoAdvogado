@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
     let currentSectionId = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 50;
         const sectionHeight = section.clientHeight;
@@ -59,14 +59,23 @@ window.addEventListener('scroll', function() {
         }
     });
 
-    const menuItems = document.querySelectorAll('nav a');
-    menuItems.forEach(item => {
+    const menuItemsNav = document.querySelectorAll('nav a');
+    menuItemsNav.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${currentSectionId}`) {
+            item.classList.add('active');
+        }
+    });
+
+    const menuItemsHamburguer = document.querySelectorAll('.menu-hamburguer a');
+    menuItemsHamburguer.forEach(item => {
         item.classList.remove('active');
         if (item.getAttribute('href') === `#${currentSectionId}`) {
             item.classList.add('active');
         }
     });
 });
+
 
 // MENU hamburguer
 const openIcon = document.querySelector('.open.hamburguer');

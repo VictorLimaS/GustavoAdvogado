@@ -1,7 +1,7 @@
 .sobre .content_sobre {
     display: flex;
     gap: 20px;
-    padding: 10rem 2rem;
+    padding: 10rem 2rem 2rem 2rem;
 }
 
 .sobre .content_sobre .caixa_sobre {
