@@ -1,0 +1,84 @@
+.clientes {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $primaryColor;
+
+    .clientes_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .comentarios {
+        display: flex;
+        justify-content: center;
+        text-align: start;
+        flex-wrap: wrap;
+    }
+
+    .coment {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        flex: 0 0 calc(30% - 0rem);
+        min-height: 200px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 1rem;
+            width: 1rem;
+        }
+    }
+
+    .inf {
+        display: flex;
+        align-items: center;
+
+        img {
+            position: relative;
+            width: 3rem;
+            border-radius: 50px;
+        }
+    }
+
+    .star {
+        color: rgb(222, 198, 19);
+    }
+
+    .top { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    hr {
+        width: 5%;
+        border: none;
+        border-radius: 50px;
+        border-top: 3px solid;
+    }
+
+    h2 {
+        font-size: 5rem;
+        font-weight: bold;
+        margin: 2rem 0;
+    }
+
+    .fa-regular {
+        font-size: 3rem;
+    }
+
+}

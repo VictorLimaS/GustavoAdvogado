@@ -1,9 +1,0 @@
-.trabalhos .container_map {
-    display: flex;
-    justify-content: center;
-}
-
-.trabalhos .container_map iframe {
-    width: 100%;
-    height: 300px;
-}

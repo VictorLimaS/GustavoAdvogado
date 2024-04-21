@@ -1,0 +1,54 @@
+.sobre {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 11rem;
+
+    .sobre_content {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+        padding: 5rem 5rem 5rem 0;
+        background-color: $primaryColor;
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        width: 25%;
+        left: 0;
+        bottom: 0;
+        filter: drop-shadow(1px 1px 20px black);
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    hr {
+        width: 20%;
+        border: none;
+        border-radius: 50px;
+        border-top: 3px solid;
+    }
+
+    h2 {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+}

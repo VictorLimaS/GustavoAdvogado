@@ -103,7 +103,7 @@ menuItems.forEach(item => {
         if (targetSection) {
             menuHamburguer.style.display = 'none';
             closerIcon.style.display = 'none';
-            openIcon.style.display = 'block';
+            openIcon.style.display = 'flex';
             targetSection.scrollIntoView({ behavior: 'smooth' });
         }
     });

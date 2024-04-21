@@ -1,0 +1,109 @@
+.artigos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+
+    .artigos_content {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 1rem 0 1rem;
+        gap: 1rem;
+        width: calc(30% - 10rem);
+        height: 20rem;
+        border-radius: 5rem 0 5rem 0;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        background-image: url(../img/fundoartigos.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: filter 0.3s;
+        box-shadow: inset 1px 1px 100px 80px rgba(0, 0, 0, 0.443);
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover {
+            filter: brightness(1.5);
+
+            img {
+                filter: brightness(1.7);
+            }
+        }
+    }
+
+    .fa-solid {
+        font-size: 2rem;
+        color: $primaryColor;
+        transition: filter 0.3s;
+    }
+
+    h2 {
+        font-size: 3rem;
+        color: $primaryColor;
+        margin: 2rem 0;
+
+    }
+
+    .top { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .fa-regular {
+        font-size: 3rem;
+        color: $primaryColor;
+    }
+
+    hr {
+        width: 10%;
+        color: $primaryColor;
+        border: none;
+        border-radius: 50px;
+        border-top: 3px solid;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $primaryColor;
+
+    }
+
+    p {
+        font-size: 1rem;
+        color: $primaryColor;
+
+    }
+
+    button {
+        margin-top: 5rem;
+        padding: 1rem 5rem;
+        background-color: transparent;
+        font-size: 1rem;
+        color: $primaryColor;
+        border: 2px solid $primaryColor;
+        cursor: pointer;
+    }
+}
