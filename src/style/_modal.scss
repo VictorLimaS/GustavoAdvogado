@@ -1,0 +1,95 @@
+.modal {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: -15rem; 
+    right: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 9999;
+    transition: bottom 0.5s ease;
+
+span {
+    display: flex;  
+    align-items: center;
+    gap: .4rem;
+}
+
+.fa-x {
+    cursor: pointer;
+}
+
+.fa-brands {
+    font-size: 1.6rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    padding: .4rem 1rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    padding: 1rem;
+}
+
+.caixinha {
+    background-color: rgb(73, 73, 73);
+    padding: .5rem;
+    border-radius: 1rem;
+    position: relative; 
+    z-index: 99;
+}
+
+.caixinha::after {
+    content: " "; 
+    position: absolute;
+    transform: rotate(18deg);
+    width: 30px;
+    height: 3px;
+    bottom: .8rem;
+    left: -.6rem;
+    background-color: rgb(73, 73, 73);
+    color: rgb(243, 0, 0); 
+    z-index: -99;
+}
+
+.caixinha::before {
+    content: " "; 
+    transform: rotate(-9deg);
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    bottom: 1.2rem;
+    left: -.6rem;
+    background-color: rgb(73, 73, 73);
+    color: rgb(243, 0, 0); 
+    z-index: -99;
+}
+
+.resposta {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+    cursor: pointer;
+
+    p {
+    background-color: rgb(40, 236, 50);
+    padding: .5rem;
+    border-radius: 1rem;
+    }
+    
+}
+
+
+
+    
+}
